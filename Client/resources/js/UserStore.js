@@ -51,12 +51,7 @@ const UserStore = {
             .then((data) => {
                 UserStore.data.users.push(data.data);
                 
-                console.log("data");
-                console.log(data.data);
                 id = data.data.id;
-                console.log(data.data.id);
-
-                console.log("address");
             fetch("http://127.0.0.1:8000/api/users/" + id + "/address", {
                 headers: {
                     "Content-Type": "application/json"
@@ -66,7 +61,6 @@ const UserStore = {
             }).then(response => response.json())
             .then((data) => {
 
-                console.log("company");
             fetch("http://127.0.0.1:8000/api/users/" + id + "/company", {
                 headers: {
                     "Content-Type": "application/json"
@@ -89,12 +83,7 @@ const UserStore = {
             .then(response => response.json())
             .then((data) => {
                 UserStore.data.users.push(data.data);
-                
-                console.log("data");
-                console.log(data.data);
-                console.log(data.data.id);
-
-                console.log("address");
+             
             fetch("http://127.0.0.1:8000/api/users/" + id + "/address", {
                 headers: {
                     "Content-Type": "application/json"
@@ -104,7 +93,6 @@ const UserStore = {
             }).then(response => response.json())
             .then((data) => {
 
-                console.log("company");
             fetch("http://127.0.0.1:8000/api/users/" + id + "/company", {
                 headers: {
                     "Content-Type": "application/json"
@@ -149,7 +137,6 @@ const UserStore = {
                 bs: data.company.bs,
             };
 
-            console.log(JSON.stringify(address));
 
             UserStore.methods.addUser(user, address, company);
         });

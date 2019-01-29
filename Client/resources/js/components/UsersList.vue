@@ -27,9 +27,7 @@ export default {
     },
     mounted(){
         UserStore.methods.getUsers();
-        //console.log(UserStore.data);
         this.users = UserStore.data;
-        //console.log(this.users);
     },
     methods: {
         viewUser(id, arrayItem){
