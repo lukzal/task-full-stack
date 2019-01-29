@@ -1,0 +1,31 @@
+.user {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  margin-left: 3px;
+}
+
+.information {
+  margin-bottom: 10px;
+}
+
+.marginbot-20 {
+  margin-bottom: 20px;
+}
+
+#import_user_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
